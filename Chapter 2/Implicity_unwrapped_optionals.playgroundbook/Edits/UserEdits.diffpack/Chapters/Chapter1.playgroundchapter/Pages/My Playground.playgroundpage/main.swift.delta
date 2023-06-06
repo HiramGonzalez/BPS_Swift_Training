@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>// Implicity unwrapped optionals
+import UIKit
+import Foundation
+
+let w = Int("123")!
+w * 2
+
+// example 2
+class BetterViewcontroller: UIViewController {
+    var myButton: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //myButton = UIButton()
+        var title = myButton.title(for: UIControl.State.[])
+    }
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 347}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
