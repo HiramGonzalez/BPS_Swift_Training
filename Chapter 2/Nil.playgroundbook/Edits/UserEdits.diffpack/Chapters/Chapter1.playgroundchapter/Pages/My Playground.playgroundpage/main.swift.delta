@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import UIKit
+import Foundation
+
+// Nil is disallowed
+var x: Int
+x = nil
+
+var c: AnyObject
+c = UIColor.red
+
+
+// cases when nil is needed
+// a method cannot return a value
+s1 = "123"
+s2 = "ABC"
+
+y = Int(s1)
+y = Int(s2)
+
+// Properties that cannot be inicialized when an object is constructed
+class ViewController: UIViewController{
+    var button: UIButton
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 356}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

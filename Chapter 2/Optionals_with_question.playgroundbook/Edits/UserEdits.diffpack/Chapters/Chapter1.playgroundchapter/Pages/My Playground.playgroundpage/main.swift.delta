@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+import UIKit
+
+//Example 1
+var z: Int?
+var string: String
+string = "123"
+z = Int(string)
+z! * 2
+
+//Example 2
+class AnotherViewController: UIViewController {
+    var anotherButton: UIButton?
+}
+
+// Unwrapping optionals with if let
+var zee: Int?
+let strings = ["ABC", "123"]
+let randomIndex = Int(arc4random() % 2)
+let anotherString = strings[randomIndex]
+
+zee = Int(anotherString)
+
+if let intValue = zee {
+    intValue * 2
+}else {
+    print("No value")
+}
+
+// Example 2
+var imageView = UIImageView()
+imageView.image = UIImage(named:"puppy_in_box")
+
+// let imageSize = imageView.image.size &lt;--returns an error
+if let image = imageView.image {
+    let size = image.size
+}else {
+    print("This image hasn't been set")
+}
+
+// Optional chaining
+// Example 1
+var anotherImageView = UIImageView()
+anotherImageView.image = UIImage(named: "puppy_in_box")
+
+if let imageSize = anotherImageView.image?.size {
+    print("\(imageSize)")
+}else {
+    print("This image hasn't been set.")
+}
+
+// Example 2
+struct Tail {
+    var length: String
+}
+struct Animal {
+    var name: String
+    var species: String
+    var tail: Tail?
+}
+
+// Example 3
+
+var animal = Animal(name: "Lenny", species: "lemur", tail: Tail(length:"12cm"))
+if let tailLength = animal.tail?.length {
+    print("\(animal.name)'s tail is \(tailLength) long")
+}else {
+    print("\(animal.name) doesn't have a tail")
+}
+
+animal = Animal(name: "Gilbert", species: "Gorila", tail: nil)
+if let tailLength = animal.tail?.length {
+    print("\(animal.name)'s tail is \(tailLength) long")
+}else {
+    print("\(animal.name) doesn't have a tail")
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1597}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
